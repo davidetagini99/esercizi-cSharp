@@ -48,18 +48,6 @@ namespace Nuovo_sistema_di_gestione_bibliotecaria
             }
         }
 
-        private void finestraAggiungiLibro_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void finestraAggiungiLibro_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            finestraPrincipale principale = new finestraPrincipale();
-
-            principale.Show();
-        }
-
         private void pulsanteAggiungiLibro_Click(object sender, EventArgs e)
         {
             if (casellaTitolo.Text == "" || casellaAutore.Text == "" || casellaAnnoPubblicazione.Text == "" || menuListaGenere.Text == "" || casellaCodiceISBN.Text == "" || casellaNumeroCopie.Text == "" || menuListaCategoria.Text == "" || presaData.Text == "" || menuListaStato.Text == "")
@@ -93,6 +81,67 @@ namespace Nuovo_sistema_di_gestione_bibliotecaria
                     menuListaStato.Text = "";
                 }
             }
+        }
+
+        private void casellaAnnoPubblicazione_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void casellaCodiceISBN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
+            {
+                e.Handled = true; 
+            }
+        }
+
+        private void casellaNumeroCopie_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private string RemoveInvalidCharacters(string input)
+        {
+            StringBuilder result = new StringBuilder();
+
+            foreach (char c in input)
+            {
+                if (char.IsDigit(c) || c == '-')
+                {
+                    result.Append(c);
+                }
+            }
+
+            return result.ToString();
+        }
+
+        private void casellaAnnoPubblicazione_TextChanged(object sender, EventArgs e)
+        {
+            casellaAnnoPubblicazione.Text = RemoveInvalidCharacters(casellaAnnoPubblicazione.Text);
+        }
+
+        private void casellaCodiceISBN_TextChanged(object sender, EventArgs e)
+        {
+            casellaCodiceISBN.Text = RemoveInvalidCharacters(casellaCodiceISBN.Text);
+        }
+
+        private void casellaNumeroCopie_TextChanged(object sender, EventArgs e)
+        {
+            casellaNumeroCopie.Text = RemoveInvalidCharacters(casellaNumeroCopie.Text);
+        }
+
+        private void finestraAggiungiLibro_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            finestraPrincipale principale = new finestraPrincipale();
+
+            principale.Show();
         }
     }
 }

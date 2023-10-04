@@ -104,6 +104,7 @@
             listaLibriInseriti.Name = "listaLibriInseriti";
             listaLibriInseriti.Size = new Size(891, 508);
             listaLibriInseriti.TabIndex = 5;
+            listaLibriInseriti.SelectedIndexChanged += listaLibriInseriti_SelectedIndexChanged;
             // 
             // finestraPrincipale
             // 

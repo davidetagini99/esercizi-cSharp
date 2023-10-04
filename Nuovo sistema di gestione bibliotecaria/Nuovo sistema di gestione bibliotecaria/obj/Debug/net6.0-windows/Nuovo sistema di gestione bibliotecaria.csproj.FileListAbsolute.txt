@@ -54,3 +54,4 @@ C:\Users\asus\Desktop\Progetti\Esercizi C Sharp\Nuovo sistema di gestione biblio
 C:\Users\asus\Desktop\Progetti\Esercizi C Sharp\Nuovo sistema di gestione bibliotecaria\Nuovo sistema di gestione bibliotecaria\obj\Debug\net6.0-windows\Nuovo sistema di gestione bibliotecaria.pdb
 C:\Users\asus\Desktop\Progetti\Esercizi C Sharp\Nuovo sistema di gestione bibliotecaria\Nuovo sistema di gestione bibliotecaria\obj\Debug\net6.0-windows\Nuovo sistema di gestione bibliotecaria.genruntimeconfig.cache
 C:\Users\asus\Desktop\Progetti\Esercizi C Sharp\Nuovo sistema di gestione bibliotecaria\Nuovo sistema di gestione bibliotecaria\obj\Debug\net6.0-windows\ref\Nuovo sistema di gestione bibliotecaria.dll
+C:\Users\asus\Desktop\Progetti\Esercizi C Sharp\Nuovo sistema di gestione bibliotecaria\Nuovo sistema di gestione bibliotecaria\obj\Debug\net6.0-windows\Nuovo_sistema_di_gestione_bibliotecaria.finestraModificaLibro.resources

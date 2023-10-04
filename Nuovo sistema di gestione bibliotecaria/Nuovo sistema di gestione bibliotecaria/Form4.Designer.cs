@@ -86,7 +86,7 @@
             formRegistrazioneCliente.Size = new Size(1175, 677);
             formRegistrazioneCliente.TabIndex = 1;
             formRegistrazioneCliente.TabStop = false;
-            formRegistrazioneCliente.Text = "Form di registraazione";
+            formRegistrazioneCliente.Text = "Form di registrazione";
             // 
             // pulsanteRegistrati
             // 

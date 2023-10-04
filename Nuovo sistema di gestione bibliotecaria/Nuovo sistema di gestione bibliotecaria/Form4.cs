@@ -110,7 +110,7 @@ namespace Nuovo_sistema_di_gestione_bibliotecaria
             }
             else
             {
-                if (casellaPassword.Text != casellaConfermaPassword.Text)  
+                if (casellaPassword.Text != casellaConfermaPassword.Text)
                 {
                     MessageBox.Show("Le password inserite non corrispondono");
                 }

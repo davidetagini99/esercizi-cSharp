@@ -60,5 +60,25 @@ namespace Nuovo_sistema_di_gestione_bibliotecaria
 
             accessoCliente.Show();
         }
+
+        //private finestraModificaLibro modificaLibro = new finestraModificaLibro();
+
+        private void listaLibriInseriti_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listaLibriInseriti.SelectedItem != null)
+            {
+                string titoloSelezionato = listaLibriInseriti.SelectedItem.ToString();
+
+                sqlConnection.Close();
+
+                finestraModificaLibro modificaLibro = new finestraModificaLibro(titoloSelezionato);
+
+                //modificaLibro.titoloLibroSelezionato = titoloSelezionato;
+
+                Hide();
+
+                modificaLibro.Show();
+            }
+        }
     }
 }

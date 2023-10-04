@@ -188,6 +188,8 @@
             casellaNumeroCopie.Size = new Size(311, 45);
             casellaNumeroCopie.TabIndex = 9;
             casellaNumeroCopie.Text = "";
+            casellaNumeroCopie.TextChanged += casellaNumeroCopie_TextChanged;
+            casellaNumeroCopie.KeyPress += casellaNumeroCopie_KeyPress;
             // 
             // label6
             // 
@@ -205,6 +207,8 @@
             casellaCodiceISBN.Size = new Size(311, 45);
             casellaCodiceISBN.TabIndex = 7;
             casellaCodiceISBN.Text = "";
+            casellaCodiceISBN.TextChanged += casellaCodiceISBN_TextChanged;
+            casellaCodiceISBN.KeyPress += casellaCodiceISBN_KeyPress;
             // 
             // label5
             // 
@@ -222,6 +226,8 @@
             casellaAnnoPubblicazione.Size = new Size(311, 45);
             casellaAnnoPubblicazione.TabIndex = 5;
             casellaAnnoPubblicazione.Text = "";
+            casellaAnnoPubblicazione.TextChanged += casellaAnnoPubblicazione_TextChanged;
+            casellaAnnoPubblicazione.KeyPress += casellaAnnoPubblicazione_KeyPress;
             // 
             // label4
             // 
@@ -251,6 +257,7 @@
             // 
             // casellaTitolo
             // 
+            casellaTitolo.ForeColor = Color.Black;
             casellaTitolo.Location = new Point(52, 67);
             casellaTitolo.Name = "casellaTitolo";
             casellaTitolo.Size = new Size(311, 45);
@@ -279,7 +286,6 @@
             Text = "Software di gestione bibliotecaria";
             WindowState = FormWindowState.Maximized;
             FormClosed += finestraAggiungiLibro_FormClosed;
-            Load += finestraAggiungiLibro_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
